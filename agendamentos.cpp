@@ -92,7 +92,7 @@ void agendarVisitas(vector<Corretor>& corretores, vector<Imovel>& imoveis) {
                  << setw(2) << setfill('0') << minuto
                  << " -> Visita ao Imóvel ID " << imovel->getId() << " - " << imovel->getEndereco() << endl;
 
-            hora++; // visita de 1 hora
+            hora++; 
             atualLat = imovel->getLat();
             atualLng = imovel->getLng();
         }
