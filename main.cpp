@@ -12,7 +12,6 @@
 
 using namespace std;
 
-// Função auxiliar para ler blocos de tamanho (linha com inteiro)
 bool leBloco(int& bloco) {
     string linha;
     // Pula linhas em branco
@@ -35,7 +34,7 @@ bool leBloco(int& bloco) {
 }
 
 int main() {
-    cin.imbue(locale("C")); // usa ponto como separador decimal
+    cin.imbue(locale("C"));
 
     vector<Cliente> clientes;
     vector<Corretor> corretores;
@@ -90,7 +89,7 @@ int main() {
 
     for (int ii = 0; ii < bloco; ii++) {
         getline(cin, row);
-        replace(row.begin(), row.end(), ',', '.'); // caso haja vírgulas no input
+        replace(row.begin(), row.end(), ',', '.'); 
         istringstream iss(row);
 
         string tipoStr, endereco;
